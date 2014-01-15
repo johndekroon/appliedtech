@@ -36,10 +36,9 @@ class Proto extends CI_Controller {
 	
 	public function experience()
 	{
-		
-		$this->load->view('experience');
-		
+		$this->viewloader('experience');
 	}
+	
 	public function viewloader($view, $data = null)
 	{
 		$this->load->view('general/header');
