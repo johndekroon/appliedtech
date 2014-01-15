@@ -36,7 +36,9 @@ class Proto extends CI_Controller {
 	
 	public function experience()
 	{
-		$this->viewloader('experience');
+		
+		$this->load->view('experience');
+		
 	}
 	public function viewloader($view, $data = null)
 	{
