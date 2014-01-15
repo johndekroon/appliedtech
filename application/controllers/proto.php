@@ -34,6 +34,10 @@ class Proto extends CI_Controller {
 		$this->viewloader('about');
 	}
 	
+	public function route()
+	{
+		$this->viewloader('route');
+	}
 	public function viewloader($view, $data = null)
 	{
 		$this->load->view('general/header');
