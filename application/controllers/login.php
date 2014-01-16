@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Proto extends CI_Controller {
+class Login extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -23,28 +23,29 @@ class Proto extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->helper('proto');
+		$this->load->library('session');
+
 	}	 
 	
-	public function index()
+	public function auth()
 	{
-		$this->viewloader('home');
+		$username = $this->input->post("username");
+		$password = sha2($this->input->post("password"));
+		
+		$users = getUsers();
+		
+		foreach($users as $user)
+		{
+			if($username === $user['username'] && $password === $user['password'])
+				$this->_login($user);
+		}
+		redirect("proto?error=1");
 	}
 	
-	public function about()
+	public function login($user)
 	{
-		$this->viewloader('about');
-	}
-	
-	public function experience()
-	{
-		$this->viewloader('experience');
-	}
-	
-	public function viewloader($view, $data = null)
-	{
-		$this->load->view('general/header');
-		$this->load->view($view, $data);
-		$this->load->view('general/footer');
+		$this->session->set_userdata($user);
+		redirect("proto");
 	}
 }
 
