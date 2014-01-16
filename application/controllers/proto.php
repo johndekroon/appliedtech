@@ -39,6 +39,27 @@ class Proto extends CI_Controller {
 	{
 		$this->viewloader('experience');
 	}
+		public function experienceRoute()
+	{
+		$this->viewloader('experienceRoute');
+	}
+	public function route()
+	{
+		$this->viewloader('route');
+	}
+	public function randomRoute()
+	{
+		$this->viewloader('randomRoute');
+	}
+	public function preferenceRoute()
+	{
+		$this->viewloader('preferenceRoute');
+	}
+	
+	public function navigate()
+	{
+		$this->viewloader('navigate');
+	}
 	
 	public function viewloader($view, $data = null)
 	{
