@@ -1,5 +1,5 @@
 <div class="jumbotron">
-		<h1>Almere Smart Society</h1>
+		<h1>Almere Experience App</h1>
 		<p>Welkom op de Experience App! Met de Experience App willen wij het winkelen een nieuw leven in blazen. Via de app kunt u gemakkelijk producten zoeken. Geen lange wachtrijen meer, en altijd de actuele voorraad van winkel zichtbaar. Uw maat niet in de winkel? Via de App ziet u gemakkelijk welke vergelijkbare producten in de stad in andere winkels met u maat op voorraad zijn.</p><p>Naar de stad gaan is meer dan alleen winkelen. Denk aan eten en drinken, musea, theater, de bioscoop, uit gaan en nog veel meer. Met de ‘routes’ van de experience app kunt u voorkeuren aangeven en ziet u gelijk wat u op dat moment kunt doen in de stad. Wel wat leuks doen, maar geen idee wat? Laat u dan verassen. Op basis van uw voorkeuren of als u geen account heeft doet de app een random voorstel.</p>			
 		<div class="row">
 			<div class="col-md-4">
