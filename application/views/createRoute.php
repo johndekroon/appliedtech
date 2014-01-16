@@ -13,7 +13,7 @@
 			<div class="col-md-4">
 				<p>
 					<h3>Experience Route samenstellen</h3>
-					<img src="http://gambarhd.com/wp-content/uploads/2014/01/puzzle-3d.jpg" height='250' width='250' class="img-responsive" />
+					<img src="http://wikitravel.org/upload/nl/4/4b/Almere_stadshart.jpg" height='250' width='250' class="img-responsive" />
 					<p>Stel hier uw Experience Route samen.</p>
 					<a class="btn btn-primary btn-lg" role="button">Samenstellen</a>
 				</p>
@@ -23,7 +23,7 @@
 					<h3>Navigeer</h3>
 					<img src="http://www.dsquaredmedia.net/wp-content/uploads/2013/08/Website-Navigation.jpg" height='250' width='250' class="img-responsive" />
 					<p>Bezoek de gewenste plek in de stad.</p>
-					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/navigate");?>">Navigeer</a>
+					<a class="btn btn-primary btn-lg" role="button">Navigeer</a>
 				</p>
 			</div>
 		</div>
