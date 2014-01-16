@@ -1,4 +1,4 @@
-<h2>Almere</h2>
+<h1>Almere</h1>
 <p>De gemeente Almere heeft 195.710 inwoners (1 november 2013, bron: CBS) en grenst aan de gemeenten Lelystad en Zeewolde. Bovendien ligt Almere aan het Gooimeer, IJmeer en Markermeer. De stad ligt geheel onder zeeniveau (2 tot 5 meter).</p>
 <p>Almere is in de tweede helft van de twintigste eeuw ontwikkeld als tweede grote stad in de provincie Flevoland. Inmiddels is het Lelystad, de hoofdstad van Flevoland, in inwonertal ruimschoots voorbijgestreefd en behoort Almere tot de 10 grootste gemeenten van Nederland. Ook is het een van de snelst groeiende steden in Nederland.</p>
 
@@ -9,3 +9,4 @@
 <p>Per 1984 werd wat er nog over was van het OL ZIJP bij wet opgedeeld in de gemeenten Almere en Zeewolde. De gemeente Almere beschouwt zich als de rechtsopvolger van het Openbaar Lichaam en voert ook hetzelfde wapen. Tot 1986, de oprichting van de provincie Flevoland, nam het Ministerie van Binnenlandse Zaken de provincietaken waar.</p>
 <p>Oorspronkelijk was Almere opgezet als meerkernige stad. Dit beleid is gedeeltelijk losgelaten. Almere Buiten en Almere Stad zijn via de wijk Tussen de Vaarten aan elkaar gegroeid. Tussen de oudste en de nieuwste woonwijken ziet men duidelijk een veranderd woningbouwbeleid terug: in de jaren zeventig was dit gericht op gelijkvormigheid en functionaliteit, in de jaren negentig werd het de trend meer exclusieve en opvallende woningen te bouwen, bijvoorbeeld in de Regenboogbuurt.</p>
 <p>Het centrum van Almere Stad, het grootste stadsdeel, is sterk aan het uitbreiden. In 2006 is het eerste deel van het nieuw gebouwde stadscentrum Citymall Almere opgeleverd. Het voornaamste gebouw hiervan is de Citadel, ontworpen door Pritzker Prize-winnaar Christian de Portzamparc. Begin 2007 zijn de nieuwe Schouwburg Almere en Kunstencentrum de Kunstlinie in gebruik genomen. Het opvallende pand, gelegen aan het Weerwater, is op 8 juni 2007 officieel geopend door koningin Beatrix.</p>
+<p>Bron: wikipedia</p>
