@@ -23,6 +23,8 @@ class Proto extends CI_Controller {
 		parent::__construct();
 		$this->load->helper('url');
 		$this->load->helper('proto');
+		$this->load->helper('form');
+		$this->load->library('session');
 	}	 
 	
 	public function index()
@@ -39,31 +41,62 @@ class Proto extends CI_Controller {
 	{
 		$this->viewloader('experience');
 	}
-		public function experienceRoute()
+	public function experienceRoute()
 	{
 		$this->viewloader('experienceRoute');
 	}
+	
 	public function route()
 	{
 		$this->viewloader('route');
 	}
+	
 	public function randomRoute()
 	{
 		$this->viewloader('randomRoute');
 	}
+	
 	public function preferenceRoute()
 	{
 		$this->viewloader('preferenceRoute');
 	}
 	
-	public function navigate()
+	public function navigate($id)
 	{
-		$this->viewloader('navigate');
+		if(empty($id))
+			redirect("proto/experience");
+
+		$data['id'] = $id;
+		$this->viewloader('navigate', $data);
+	}
+	
+	public function profile()
+	{
+		$username = $this->session->userdata('username');
+		if(empty($username))
+			redirect("proto/index");
+		
+		$data['username'] = $username;
+		$this->viewloader("profile");
+	}
+	
+	public function stores()
+	{
+		$this->viewloader("stores");	
+	}
+	
+	public function history()
+	{
+		$this->viewloader("geschiedenis");	
 	}
 	
 	public function viewloader($view, $data = null)
 	{
-		$this->load->view('general/header');
+		$header = array();
+		
+		$header["username"] = $this->session->userdata('username');
+		
+		$this->load->view('general/header', $header);
 		$this->load->view($view, $data);
 		$this->load->view('general/footer');
 	}

@@ -29,23 +29,31 @@ class Login extends CI_Controller {
 	
 	public function auth()
 	{
-		$username = $this->input->post("username");
-		$password = sha2($this->input->post("password"));
 		
+		$username = $this->input->post("username");
+		$password = sha1($this->input->post("pass"));
+
 		$users = getUsers();
 		
 		foreach($users as $user)
 		{
-			if($username === $user['username'] && $password === $user['password'])
+			if($username == $user['username'] && $password == $user['password'])
 				$this->_login($user);
 		}
-		redirect("proto?error=1");
+		
+		redirect("proto/index/?error=1");
 	}
 	
-	public function login($user)
+	public function _login($user)
 	{
 		$this->session->set_userdata($user);
-		redirect("proto");
+		redirect("proto/index");
+	}
+	
+	public function logout()
+	{
+		$this->session->sess_destroy();
+		redirect("proto/index");
 	}
 }
 

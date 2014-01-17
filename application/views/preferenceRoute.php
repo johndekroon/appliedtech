@@ -18,29 +18,47 @@
 				<p>
 					<h3><?php echo $arrayPlaces[$start];?></h3>
 					<img src="<?php echo $arrayLinks[$start];?>" height='250' width='250' class="img-responsive" />
-					<p><?php echo $arrayComments[$start];?></p>
-					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/navigate");?>">Navigatie</a>
 				</p>
 			</div>
 			<div class="col-md-4">
 				<p>
 					<h3><?php echo $arrayPlaces[$next];?></h3>
 					<img src="<?php echo $arrayLinks[$next];?>" height='250' width='250' class="img-responsive" />
-					<p><?php echo $arrayComments[$next];?></p>
-					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/navigate");?>">Navigatie</a>
 				</p>
 			</div>
 			<div class="col-md-4">
 				<p>
 					<h3><?php echo $arrayPlaces[$end];?></h3>
 					<img src="<?php echo $arrayLinks[$end];?>" height='250' width='250' class="img-responsive" />
-					<p><?php echo $arrayComments[$end];?></p>
-					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/navigate");?>">Navigatie</a>
 				</p>
 			</div>
-			
 		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+					<p><?php echo $arrayComments[$start];?></p>
+			</div>
+			<div class="col-md-4">
+					<p><?php echo $arrayComments[$next];?></p>
+			</div>
+			<div class="col-md-4">
+					<p><?php echo $arrayComments[$end];?></p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/navigate/".$start);?>">Navigatie</a>
+			</div>
+			<div class="col-md-4">
+					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/navigate/".$next);?>">Navigatie</a>
+			</div>
+			<div class="col-md-4">
+					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/navigate/".$end);?>">Navigatie</a>
+			</div>
+		</div>
+		
 		<br />
 		<br />
-		<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/randomRoute");?>">Volgende route</a>
+		<a class="btn btn-default btn-lg" role="button" href="<?=site_url("proto/randomRoute");?>">Volgende route</a>
 	</div>

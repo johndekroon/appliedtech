@@ -6,25 +6,43 @@
 				<p>
 					<h3>Gebaseerd op voorkeuren</h3>
 					<img src="http://wittelinden.jouwweb.nl/upload/1/f/6/wittelinden/op-maat-begeleiding.large.jpg" height='250' width='250' class="img-responsive" />
-					<p>Ervaar de stad vanuit uw eigen voorkeuren.
-					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/preferenceRoute");?>">Start</a>
 				</p>
 			</div>
 			<div class="col-md-4">
 				<p>
 					<h3>Willekeurige route</h3>
 					<img src="http://www.jpid.nl/Html/Images/reclame-op-maat.jpg" height='250' width='250' class="img-responsive" />
-					<p>Ervaar de stad vanuit een willekeurig samengestelde route.</p>
-					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/randomRoute");?>">Start</a>
 				</p>
 			</div>
 			<div class="col-md-4">
 				<p>
 					<h3>Zelfgemaakte route<h3>
 					<img src="http://cdn.ws.citrix.com/wp-content/uploads/2010/01/you-decide001.jpg" height='250' width='250' class="img-responsive" />
-					<p>Volg een route die u zelf gemaakt heeft.</p>
-					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/preferenceRoute");?>">Start</a>
 				</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+					<p>Ervaar de stad vanuit uw eigen voorkeuren.
+			</div>
+			<div class="col-md-4">
+					<p>Ervaar de stad vanuit een willekeurig samengestelde route.</p>
+			</div>
+			<div class="col-md-4">
+					<p>Volg een route die u zelf gemaakt heeft.</p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/preferenceRoute");?>">Start</a>
+			</div>
+			<div class="col-md-4">
+					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/randomRoute");?>">Start</a>
+			</div>
+			<div class="col-md-4">
+					<a class="btn btn-primary btn-lg" role="button" href="<?=site_url("proto/preferenceRoute");?>">Start</a>
 			</div>
 		</div>
 	</div>

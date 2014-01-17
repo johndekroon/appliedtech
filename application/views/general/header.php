@@ -23,12 +23,18 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li><a href="<?=base_url()?>">Home</a></li>
+	  <li><a href="<?=site_url("proto/stores");?>">Winkel zoeken</a></li>
       <li><a href="<?=site_url("proto/about");?>">Over ons</a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
-	  <li><a href="#">Register</a></li>
-	  <li><a href="#">Login</a></li>
+	<?php if(!empty($username)): ?>
+		<li><a href="<?=site_url("proto/profile")?>">Welkom <?=$username?></a></li>
+		<li><a href="<?=site_url("login/logout")?>">Uitloggen</a></li>
+	<?php else: ?>
+	  <!--<li><a href="#">Register</a></li>-->
+	  <li><a href="#" data-toggle="modal" data-target="#login">Login</a></li>
+	<?php endif; ?>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
@@ -36,4 +42,6 @@
 <div class="row">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
+
+
 
